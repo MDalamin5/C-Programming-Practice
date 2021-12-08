@@ -2,7 +2,7 @@
 int main()
 {
     char ch;
-    printf("please enter a char number : ");
+    printf("Please eterr a charect valu: ");
     scanf("%c",&ch);
-    printf("your int number is %d",ch);
+    printf("Your int number is : %d",ch);
 }
