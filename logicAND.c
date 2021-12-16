@@ -12,4 +12,5 @@ int main()
     printf("the large number is: %d",num3);
     else
     printf("All are equal");
+    
 }
