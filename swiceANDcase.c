@@ -8,7 +8,7 @@ int main()
     switch(digit)
     {
         case 0:
-        printf("zero");
+                printf("zero");
         break;
         case 1:
         printf("One");
