@@ -1,4 +1,5 @@
-
+#include<stdio.h>
+#include<math.h>
 int main()
 {
     char lower,upper;
@@ -6,4 +7,5 @@ int main()
     scanf("%c",&lower);
     upper = toupper(lower);
     printf("Uupper case number is = %c",upper);
+    
 }
