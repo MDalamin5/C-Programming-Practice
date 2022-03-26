@@ -1,17 +1,34 @@
 #include<stdio.h>
 int main()
 {
-     int time=10;
-     if (time==15)
+     int wintd_speed;
+
+     printf("Enter wind Speed");
+     scanf("%d",&wintd_speed);
+
+     if(wintd_speed<25)
      {
-        printf("Good Mornig SIr\n");
-        printf("go carena");
+          printf("not a strong wind");
      }
 
-     else
+     else if (wintd_speed>25 && wintd_speed<38)
      {
-          printf("good after noon\n");
-          printf("hello sir");
+          printf("Strong Wind");
      }
      
+     else if (wintd_speed>39 && wintd_speed<54)
+     {
+          printf("gale");
+     }
+
+     else if (wintd_speed>55 && wintd_speed<54)
+     {
+          printf("aWhole gale");
+     }
+
+     else if (72<wintd_speed)
+     {
+          printf("Hurricane");
+     }
+
 }
