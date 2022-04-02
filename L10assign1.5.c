@@ -1,32 +1,38 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-    int i,j,n,k;
-    printf("Enter the value of n: ");
-    scanf("%d",&n);
+    int i, j, k=1;
 
-    for(i=1; i<=n; i++)
+
+    for(i=0; i<5; i++)
     {
-        for(j=1; j<=n-i; j++)
+        for(j=i; j<=5; j++)
         {
             printf(" ");
         }
-
-        for(j=1; j<=i; j++)
-        
+        for(j=0; j<=i; j++)
         {
-            k=i+j;
-           if(k%2==0)
-           {
-               printf("%d",0);
-           }
 
-          if(k%2==1)
-           {
-               printf("%d",1);
-           }
+            if(k == 1)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("1");
+            }
+
+            k *= -1;
+        }
+
+        if(i % 2 == 0)
+        {
+            k *= -1;
         }
 
         printf("\n");
     }
+
+    return 0;
 }
