@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int i,position,valu,n,element;
+    int i,position,valu,n,element=0;
     int arr[100];
 
     printf("Enter your array size: ");
@@ -18,12 +18,22 @@ int main()
     printf("Enter your element: ");
     scanf("%d",&element);
 
-    arr[position]=element;
+    
 
-    printf("%d",arr[position]);
+    //printf("%d",arr[position]);
 
-    for(i=position; ;)
+    for(i=n-1; i>=position-1; i--)
+    
     {
-        
+        arr[i+1]=arr[i];
     }
+
+    arr[position-1]=element;
+
+    for(i=0; i<n+1; i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+
+
 }
