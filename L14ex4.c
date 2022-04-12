@@ -27,7 +27,7 @@ void maxarray(int arr[],int n)
     {
         if(arr[i]==small)
         {
-            printf("%d, \t",i+1);
+            printf("%d \t",i+1);
             
         }
     }
