@@ -9,12 +9,12 @@ int main()
     printf("Enter name and age: ");
     scanf(" %s %d", name,&age);
 
-    fprintf(infile," %s,          Age: %d",name,age);
+    fprintf(infile," %s,  Age: %d",name,age);
     fclose(infile);
 
     infile=fopen("info.txt", "r");
     fscanf(infile, "%s" "%d", name, &age);
-    printf("Age= %d",age);
+    printf("%s  Age= %d",name,age);
     fclose(infile);
 
 }
