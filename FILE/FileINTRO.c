@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-    FILE*inp;
+     FILE*inp;
     FILE*oupt;
     int in_stutus;
     double item;
