@@ -1,0 +1,1 @@
+ strcpy(cpy_str,str);
