@@ -10,6 +10,7 @@ int main()
         if(array[i]==value)
         {
             terget=i;
+            break;
         }
     }
     for(i=terget; i<5;i++)

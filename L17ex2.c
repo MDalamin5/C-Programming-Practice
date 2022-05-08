@@ -33,6 +33,19 @@ int main()
         puts(person[0].motherName);
 
     }
+
+        else if(person[0].year>person[1].year)
+    {
+        printf("Person%d is Older.\n",2);
+        printf("Father Name: ");
+        puts(person[1].fatherName);
+        printf("Mother Name: ");
+        puts(person[1].motherName);
+
+    }
+
+
+
     else if(person[0].month<person[1].month)
     {
         printf("Person%d is Older.\n",1);
@@ -40,6 +53,16 @@ int main()
         puts(person[0].fatherName);
         printf("Mother Name: ");
         puts(person[0].motherName);
+        
+    }
+
+    else if(person[0].month>person[1].month)
+    {
+        printf("Person%d is Older.\n",2);
+        printf("Father Name: ");
+        puts(person[1].fatherName);
+        printf("Mother Name: ");
+        puts(person[1].motherName);
         
     }
 
@@ -53,24 +76,8 @@ int main()
         
     }
 
-    else if(person[0].year>person[1].year)
-    {
-        printf("Person%d is Older.\n",2);
-        printf("Father Name: ");
-        puts(person[1].fatherName);
-        printf("Mother Name: ");
-        puts(person[1].motherName);
-
-    }
-    else if(person[0].month>person[1].month)
-    {
-        printf("Person%d is Older.\n",2);
-        printf("Father Name: ");
-        puts(person[1].fatherName);
-        printf("Mother Name: ");
-        puts(person[1].motherName);
-        
-    }
+    
+    
 
     else if(person[0].day>person[1].day)
     {
